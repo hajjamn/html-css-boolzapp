@@ -1,7 +1,9 @@
 :root {
     --header-color: #EAEAEA;
     --footer-color: #F2EEEB;
+    --notification-color: #A6D7F9;
     --dark-gray: #B1B1B1;
+    --dark-text: #5B7384;
     --gutter: 15px;
 }
 
@@ -268,13 +270,39 @@
     .sidebar-notification {
       display: none;
       height: 80px;
-      background-color: #A6D7F9;
+      background-color: var(--notification-color);
     }
 
     @media (min-width: 992px) {
       .sidebar-notification {
         display: flex;
       }
+    }
+
+    .notification-icon {
+      width: 50px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      line-height: 50px;
+      text-align: center;
+      background-color: white;
+      color: var(--notification-color);
+      font-size: 20px;
+      display: block;
+    }
+
+    .notification-text {
+      padding: 0 var(--gutter);
+    }
+
+    .notification-text strong {
+      color: black;
+    }
+
+    .notification-text p {
+      text-decoration: underline;
+      color: var(--dark-text);
+      font-size: 14px;
     }
 
     /* SIDEBAR SEARCHBAR */
