@@ -424,6 +424,13 @@
       color: var(--dark-text);
     }
 
+    @media (min-width: 768px) {
+      .content-header .contact-info {
+        display: block;
+      }
+    }
+
+
     /* BODY */
 
     .content-body {
