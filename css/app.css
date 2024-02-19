@@ -456,10 +456,30 @@
 
       .content-message-user {
         background-color: #DEF8C0;
+        margin-left: 90px;
       }
 
       .content-message-contact {
         background-color: #FFFFFF;
+        margin-right: 90px;
+      }
+
+      @media (min-width: 768px) {
+        .content-message-user {
+          margin-left: 40%;
+        }
+        .content-message-contact {
+          margin-right: 40%;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .content-message-user {
+          margin-left: 40%;
+        }
+        .content-message-contact {
+          margin-right: 40%;
+        }
       }
 
       .content-message-user p, .content-message-contact p {
