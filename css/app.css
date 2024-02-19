@@ -216,6 +216,7 @@
 
 .app-row {
   height: 100%;
+  width: 100%;
 }
 
 /* APP SIDEBAR */
@@ -366,8 +367,13 @@
 /* APP CONTENT */
 
   .app-content {
-    max-width: calc(100% - 80px);
     height: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .app-content {
+      max-width: calc(100% - 80px);
+    }
   }
 
   @media (min-width: 992px) {
