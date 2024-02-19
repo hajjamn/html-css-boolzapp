@@ -104,9 +104,13 @@ html {
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
-  
+  body {
+    color: red;
+  }
 }
 
 @media (min-width: 992px) {
-
+  body {
+    color: blue;
+  }
 }
