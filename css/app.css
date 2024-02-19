@@ -9,7 +9,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
   }
 
   ul, ol, menu {
@@ -98,12 +97,17 @@
   }
 
   .container {
-    max-width: 1164px;
     margin: 0 auto;
   }
   .row {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: 992px) {
+    .col-lg-12 {
+      width: 100%;
+    }
   }
 
 /* UTILITIES */
@@ -122,6 +126,14 @@
 
   .column {
     flex-direction: column;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .align-center {
+    align-items: center;
   }
 
   .overflow-scroll {
@@ -214,6 +226,12 @@
     }
   }
 
+  @media (min-width: 992px) {
+    .app-sidebar {
+      width: 380px;
+    }
+  }
+
     /* SIDEBAR HEADER */
 
     .sidebar-header {
@@ -262,10 +280,26 @@
           padding: 15px;
         }
 
-        /* CONTACT INFO */
-        
+      /* CONTACT INFO */
+      
+      .contact-info {
+        display: none;
+        position: relative;
+        justify-content: center;
+      }
+
+      @media (min-width: 992px) {
         .contact-info {
-          display: none;
+          display: flex;
+        }
+      }
+
+      
+
+        .contact-time {
+          position: absolute;
+          top: 20px;
+          right: 5px;
         }
 
 /* APP CONTENT */
@@ -273,6 +307,12 @@
   .app-content {
     max-width: calc(100% - 80px);
     height: 100%;
+  }
+
+  @media (min-width: 992px) {
+    .app-content {
+      max-width: calc(100% - 380px);
+    }
   }
 
     /* HEADER */
