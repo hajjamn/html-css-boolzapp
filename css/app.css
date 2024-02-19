@@ -166,10 +166,6 @@
 
 /* DEBUG */
 
-  .debug #app {
-    background-color: #DBDBD3;
-  }
-
   .debug .app-container {
     background-color: rgba(0, 0, 0, 0.1)
   }
@@ -192,6 +188,12 @@
     #app {
       padding: 30px 0;
     }
+  }
+
+  #app {
+    background: linear-gradient(
+      to bottom, #4D9288 0%, #4D9288 15%, #DBDBD3 15%, #DBDBD3 100%
+    )
   }
 
 /* APP CONTAINER */
