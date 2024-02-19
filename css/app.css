@@ -91,10 +91,13 @@ html {
 
 /* LAYOUT */
 
+#app {
+  height: 100vh;
+}
+
 .container {
   max-width: 1164px;
   margin: 0 auto;
-  padding: 0 12px;
 }
 .row {
   display: flex;
@@ -104,13 +107,81 @@ html {
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
-  body {
+  .debug {
     color: red;
   }
 }
 
 @media (min-width: 992px) {
-  body {
+  .debug {
     color: blue;
   }
+}
+
+/* DEBUG */
+
+.debug #app {
+  background-color: #DBDBD3;
+}
+
+.debug .app-container {
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+.debug .app-row {
+  background-color: #EAEAEA;
+}
+
+.debug .app-side-bar {
+  background-color: white;
+}
+
+.debug .app-content {
+  background-color: #DAD5CE;
+}
+
+/* APP */
+
+@media (min-width: 992px) {
+  #app {
+    padding: 30px 0;
+  }
+}
+
+/* APP CONTAINER */
+
+.app-container {
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .app-container {
+    width: 80%;
+  }
+}
+
+/* APP ROW */
+
+.app-row {
+  height: 100%;
+}
+
+/* APP SIDE-BAR */
+
+.app-side-bar {
+  width: 80px;
+  flex-shrink: 0;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .app-side-bar {
+    display: flex;
+  }
+}
+
+/* APP CONTENT */
+
+.app-content {
+  flex-grow: 1;
 }
