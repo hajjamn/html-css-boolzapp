@@ -1,129 +1,141 @@
 :root {
+    --header-color: #EAEAEA;
+    --footer-color: #F2EEEB;
 }
 
 /* RESET */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
-}
+  }
 
-ul, ol, menu {
-  list-style-type: none;
-}
+  ul, ol, menu {
+    list-style-type: none;
+  }
 
-img {
-  max-width: 100%;
-}
+  img {
+    max-width: 100%;
+  }
 
-a, button {
-  text-decoration: none;
-  color: currentColor;
-}
+  a, button {
+    text-decoration: none;
+    color: currentColor;
+  }
 
 /* STYLE */
 
-html {
-  font-family: "Lato", sans-serif;
-}
+  html {
+    font-family: "Lato", sans-serif;
+  }
 
-.lato-thin {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
+  .lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
 
-.lato-light {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
 
-.lato-regular {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-.lato-bold {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
 
-.lato-black {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
 
-.lato-thin-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
 
-.lato-light-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
 
-.lato-regular-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
 
-.lato-bold-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
 
-.lato-black-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
+  .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
 
 /* LAYOUT */
 
-#app {
-  height: 100vh;
-}
+  #app {
+    height: 100vh;
+  }
 
-.container {
-  max-width: 1164px;
-  margin: 0 auto;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
+  .container {
+    max-width: 1164px;
+    margin: 0 auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 /* UTILITIES */
 
-.flex {
-  display: flex;
-}
+  .flex {
+    display: flex;
+  }
 
-.grow-1 {
-  flex-grow: 1;
-}
+  .grow-1 {
+    flex-grow: 1;
+  }
 
-.shrink-0 {
-  flex-shrink: 0;
-}
+  .shrink-0 {
+    flex-shrink: 0;
+  }
 
-.column {
-  flex-direction: column;
-}
+  .column {
+    flex-direction: column;
+  }
 
-.overflow-scroll {
-  overflow: scroll;
+  .overflow-scroll {
+    overflow: scroll;
+  }
+
+/* COMPONENTS */
+
+.contact-avatar-pic {
+  width: 50px;
+  aspect-ratio: 1;
+  object-fit: fill;
+  border-radius: 50%;
+  display: block;
 }
 
 /* MEDIA QUERIES */
@@ -142,45 +154,45 @@ html {
 
 /* DEBUG */
 
-.debug #app {
-  background-color: #DBDBD3;
-}
+  .debug #app {
+    background-color: #DBDBD3;
+  }
 
-.debug .app-container {
-  background-color: rgba(0, 0, 0, 0.1)
-}
+  .debug .app-container {
+    background-color: rgba(0, 0, 0, 0.1)
+  }
 
-.debug .app-row {
-  background-color: #EAEAEA;
-}
+  .debug .app-row {
+    background-color: #EAEAEA;
+  }
 
-.debug .app-side-bar {
-  background-color: white;
-}
+  .debug .app-sidebar {
+    background-color: white;
+  }
 
-.debug .app-content {
-  background-color: #DAD5CE;
-}
+  .debug .app-content {
+    background-color: #DAD5CE;
+  }
 
 /* APP */
 
-@media (min-width: 992px) {
-  #app {
-    padding: 30px 0;
+  @media (min-width: 992px) {
+    #app {
+      padding: 30px 0;
+    }
   }
-}
 
 /* APP CONTAINER */
 
-.app-container {
-  height: 100%;
-}
-
-@media (min-width: 992px) {
   .app-container {
-    width: 80%;
+    height: 100%;
   }
-}
+
+  @media (min-width: 992px) {
+    .app-container {
+      width: 80%;
+    }
+  }
 
 /* APP ROW */
 
@@ -188,38 +200,93 @@ html {
   height: 100%;
 }
 
-/* APP SIDE-BAR */
+/* APP SIDEBAR */
 
-.app-side-bar {
-  width: 80px;
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .app-side-bar {
-    display: flex;
+  .app-sidebar {
+    width: 80px;
+    display: none;
+    border-right: 1px solid #D6D6D6;
   }
-}
+
+  @media (min-width: 768px) {
+    .app-sidebar {
+      display: flex;
+    }
+  }
+
+    /* SIDEBAR HEADER */
+
+    .sidebar-header {
+      height: 70px;
+      background-color: var(--header-color);
+    }
+
+    /* SIDEBAR NOTIFICATION */
+
+    .sidebar-notification {
+      display: none;
+      height: 80px;
+      background-color: #A6D7F9;
+    }
+
+    @media (min-width: 992px) {
+      .sidebar-notification {
+        display: flex;
+      }
+    }
+
+    /* SIDEBAR SEARCHBAR */
+
+    .sidebar-searchbar {
+      display: none;
+      height: 50px;
+    }
+
+    @media (min-width: 992px) {
+      .sidebar-searchbar {
+        display: flex;
+      }
+    }
+
+    /* SIDEBAR CONTACTS */
+
+      /* CONTACT ITEM */
+
+      .contact-item {
+        border-bottom: 1px solid #F5F5F5;
+      }
+
+        /* CONTACT AVATAR */
+
+        .contact-avatar {
+          padding: 15px;
+        }
+
+        /* CONTACT INFO */
+        
+        .contact-info {
+          display: none;
+        }
 
 /* APP CONTENT */
 
-.app-content {
-  max-width: calc(100% - 80px);
-  height: 100%;
-}
-
-  /* HEADER */
-
-  .content-header {
-    height: 70px;
-    background-color: #EAEAEA;
+  .app-content {
+    max-width: calc(100% - 80px);
+    height: 100%;
   }
 
-  /* BODY */
+    /* HEADER */
 
-  /* FOOTER */
+    .content-header {
+      height: 70px;
+      background-color: var(--header-color);
+    }
 
-  .content-footer {
-    height: 70px;
-    background-color: #F2EEEB;
-  }
+    /* BODY */
+
+    /* FOOTER */
+
+    .content-footer {
+      height: 70px;
+      background-color: var(--footer-color);
+    }
