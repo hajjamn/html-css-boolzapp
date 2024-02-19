@@ -1,6 +1,8 @@
 :root {
     --header-color: #EAEAEA;
     --footer-color: #F2EEEB;
+    --dark-gray: #B1B1B1;
+    --gutter: 15px;
 }
 
 /* RESET */
@@ -222,6 +224,10 @@
     border-right: 1px solid #D6D6D6;
   }
 
+  .app-sidebar > * {
+    padding: 0 var(--gutter);
+  }
+
   @media (min-width: 768px) {
     .app-sidebar {
       display: flex;
@@ -240,6 +246,22 @@
       height: 70px;
       background-color: var(--header-color);
     }
+
+      .sidebar-header-list {
+        display: none;
+        gap: var(--gutter);
+        color: var(--dark-gray);
+      }
+
+      @media (min-width: 992px) {
+        .sidebar-header-list {
+          display: flex;
+        }
+      }
+
+      .sidebar-header-list > * {
+        color: var(--dark-gray);
+      }
 
     /* SIDEBAR NOTIFICATION */
 
@@ -278,10 +300,6 @@
 
         /* CONTACT AVATAR */
 
-        .contact-avatar {
-          padding: 15px;
-        }
-
       /* CONTACT INFO */
       
       .contact-info {
@@ -295,8 +313,6 @@
           display: flex;
         }
       }
-
-      
 
         .contact-time {
           position: absolute;
