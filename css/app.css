@@ -411,6 +411,17 @@
     .content-header {
       height: 70px;
       background-color: var(--header-color);
+      padding: var(--gutter);
+    }
+
+    .content-header-list {
+      gap: var(--gutter);
+      color: var(--dark-gray);
+      display: flex;
+    }
+
+    .content-header .contact-message {
+      color: var(--dark-text);
     }
 
     /* BODY */
