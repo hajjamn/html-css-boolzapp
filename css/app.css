@@ -241,6 +241,7 @@
   @media (min-width: 992px) {
     .app-sidebar {
       width: 380px;
+      max-height: 100%
     }
   }
 
@@ -336,6 +337,10 @@
     }
 
     /* SIDEBAR CONTACTS */
+
+    .sidebar-contacts {
+      max-height: calc(100% - ( 70px + 80px + 50px));
+    }
 
       /* CONTACT ITEM */
 
