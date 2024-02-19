@@ -104,6 +104,28 @@ html {
   flex-wrap: wrap;
 }
 
+/* UTILITIES */
+
+.flex {
+  display: flex;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
@@ -170,7 +192,6 @@ html {
 
 .app-side-bar {
   width: 80px;
-  flex-shrink: 0;
   display: none;
 }
 
@@ -183,5 +204,22 @@ html {
 /* APP CONTENT */
 
 .app-content {
-  flex-grow: 1;
+  max-width: calc(100% - 80px);
+  height: 100%;
 }
+
+  /* HEADER */
+
+  .content-header {
+    height: 70px;
+    background-color: #EAEAEA;
+  }
+
+  /* BODY */
+
+  /* FOOTER */
+
+  .content-footer {
+    height: 70px;
+    background-color: #F2EEEB;
+  }
