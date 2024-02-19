@@ -4,6 +4,7 @@
     --notification-color: #A6D7F9;
     --dark-gray: #B1B1B1;
     --dark-text: #5B7384;
+    --darkish-text: #B7B9BB;
     --gutter: 15px;
 }
 
@@ -338,8 +339,17 @@
 
       /* CONTACT ITEM */
 
+      @media (min-width: 992px) {
+        .contacts-list {
+          margin-right: 0 var(--gutter);
+          border-right: 1px solid var(--dark-gray);
+        }
+      }
+
       .contact-item {
         border-bottom: 1px solid #F5F5F5;
+        padding-top: var(--gutter);
+        padding-bottom: var(--gutter);
       }
 
         /* CONTACT AVATAR */
@@ -350,6 +360,9 @@
         display: none;
         position: relative;
         justify-content: center;
+        color: var(--darkish-text);
+        font-size: 14px;
+        padding: 0 var(--gutter);
       }
 
       @media (min-width: 992px) {
@@ -358,10 +371,16 @@
         }
       }
 
+        .contact-name {
+          color: black;
+          font-size: 16px;
+          font-weight: bold;
+        }
+
         .contact-time {
           position: absolute;
-          top: 20px;
-          right: 5px;
+          top: 10px;
+          right: 10px;
         }
 
 /* APP CONTENT */
