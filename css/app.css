@@ -426,6 +426,53 @@
 
     /* BODY */
 
+    .content-body {
+      background-image: url(../img/mine.jpg);
+      color: black;
+      padding: 25px;
+    }
+
+    @media (min-width: 768px) {
+      .content-body {
+        padding: 45px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .content-body {
+        padding: 70px;
+      }
+    }
+
+      /* USER/CONTACT MESSAGE */
+
+      .content-message-user, .content-message-contact {
+        border-radius: 16px;
+        padding: var(--gutter);
+        position: relative;
+        margin-bottom: 10px;
+        color: var(--darkish-text);
+      }
+
+      .content-message-user {
+        background-color: #DEF8C0;
+      }
+
+      .content-message-contact {
+        background-color: #FFFFFF;
+      }
+
+      .content-message-user p, .content-message-contact p {
+        color: black;
+      }
+
+      :is(.content-message-user, .content-message-contact) > span {
+        position: absolute;
+        right: 2px;
+        bottom: 5px;
+        font-size: 14px;
+      }
+
     /* FOOTER */
 
     .content-footer {
