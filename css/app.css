@@ -310,12 +310,27 @@
     .sidebar-searchbar {
       display: none;
       height: 50px;
+      padding: 0;
+      margin: 7px;
+      border: 1px solid var(--dark-gray);
+      color: var(--dark-text);
     }
 
     @media (min-width: 992px) {
       .sidebar-searchbar {
         display: flex;
       }
+    }
+
+    .sidebar-searchbar > i {
+      padding-left: var(--gutter);
+    }
+
+    .sidebar-searchbar > input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      margin-left: 5px;
     }
 
     /* SIDEBAR CONTACTS */
