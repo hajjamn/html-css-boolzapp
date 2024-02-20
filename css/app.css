@@ -503,6 +503,7 @@
       /* MESSAGE ACTION MENU */
 
       .message-actions {
+        border: 1px solid var(--dark-gray);
         display: none;
         background-color: white;
         color: transparent;
