@@ -508,6 +508,7 @@
         background-color: white;
         color: transparent;
         position: absolute;
+        z-index: 999;
         width: 150px;
         right: 0;
         top: 30px;
