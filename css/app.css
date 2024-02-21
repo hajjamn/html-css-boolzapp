@@ -330,6 +330,11 @@
       padding-left: var(--gutter);
       position: absolute;
       pointer-events: none;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .sidebar-searchbar input:focus-visible + i {
+      opacity: 0;
     }
 
     .sidebar-searchbar > input {
