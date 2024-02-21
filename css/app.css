@@ -317,6 +317,7 @@
       margin: 7px;
       border: 1px solid var(--dark-gray);
       color: var(--dark-text);
+      position: relative;
     }
 
     @media (min-width: 992px) {
@@ -327,13 +328,17 @@
 
     .sidebar-searchbar > i {
       padding-left: var(--gutter);
+      position: absolute;
+      pointer-events: none;
     }
 
     .sidebar-searchbar > input {
       width: 100%;
       height: 100%;
       border: none;
-      margin-left: 5px;
+      padding-left: 50px;
+      padding-right: 10px;
+      outline: none;
     }
 
     /* SIDEBAR CONTACTS */
